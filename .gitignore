@@ -1,0 +1,15 @@
+# Stuff to ignore
+
+# OSX
+.DS_Store
+
+static/js
+
+# intelliJ
+*.iml
+.idea
+
+# npm
+node_modules
+npm-debug.log
+
