@@ -1,23 +1,38 @@
 import React from 'react';
-import MoleculeList from './MoleculeList.jsx'
+import Home from './Home.jsx';
+import MoleculeInformation from './MoleculeInformation.jsx';
 
 const styles = {
-  container:{
-    display: 'flex',
-    flexDirection: 'row',
-  }
+    container: {
+        padding: '1vh 3vw 1vh 3vw'
+    }
 }
 
 export default class App extends React.Component {
-  render(){
-    return <div style={styles.container}>
-      <MoleculeList type="Diatomics" nameArray={this.props.molecules.filter((molecule)=>molecule.numberOfAtoms==2)}/>
-      <MoleculeList type="Triatomics" nameArray={this.props.molecules.filter((molecule)=>molecule.numberOfAtoms==3)}/>
-      <MoleculeList type="Tetratomics" nameArray={this.props.molecules.filter((molecule)=>molecule.numberOfAtoms==4)}/>
-      <MoleculeList type="Pentatomics" nameArray={this.props.molecules.filter((molecule)=>molecule.numberOfAtoms==5)}/>
-      <MoleculeList type="Hexatomics" nameArray={this.props.molecules.filter((molecule)=>molecule.numberOfAtoms==6)}/>
+    constructor(props) {
+        super(props);
+        this.state = {
+            home: true,
+            displayMolecule: ""
+        }
+    }
 
-    </div>
-  }
+    changePageState(e) {
+        console.log(this.props.molecules.filter((molecule)=>molecule.molecule == e.target.innerHTML));
+
+        this.setState({
+            home: false,
+            displayMolecule: this.props.molecules.filter((molecule)=>molecule.molecule == e.target.innerHTML)
+        })
+    }
+
+    render() {
+        return <div style={styles.container}>
+            {this.state.home ? <Home molecules={this.props.molecules}
+                                     changePageState={this.changePageState.bind(this)}/> :
+                <MoleculeInformation molecule={this.state.displayMolecule}/>}
+
+        </div>
+    }
 }
 

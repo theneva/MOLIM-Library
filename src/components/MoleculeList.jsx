@@ -17,7 +17,7 @@ export default class MoleculeList extends React.Component {
       <h4 style={styles.title}>{this.props.type}</h4>
 
       {this.props.nameArray.map((name)=> {
-        return <MoleculeName name={name.molecule}/>
+        return <MoleculeName name={name.molecule} changePageState={this.props.changePageState}/>
       })}
 
     </div>

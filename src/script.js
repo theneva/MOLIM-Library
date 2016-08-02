@@ -79,6 +79,7 @@ const molecules = [
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
+            exists: true,
             one: {
                 paperTitle: "Spectroscopically determined potential energy surface of H162OH216O up to 25 000 cm−1",
                 surfaceDescription: "A PES is constructed by fitting to observed vibration-rotation energy levels of the system using the exact kinetic energy operator nuclear motion program DVR3D.",
@@ -173,7 +174,8 @@ const molecules = [
     },
 ];
 
-/** paperTitle: "",
+/** exists: true,
+ paperTitle: "",
  surfaceDescription: "",
  DOI: "",
  references: {one: "", two: ""},
