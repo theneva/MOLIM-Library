@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import App from './components/App.jsx'
 
-const array = ["Liam", "Cameron", "James", "Omree"];const molecules = [
+const molecules = [
     {
         molecule: "NaH",
         numberOfAtoms: "2",
@@ -103,7 +103,7 @@ const array = ["Liam", "Cameron", "James", "Omree"];const molecules = [
             },
             three: {
                 paperTitle: "CVRQD ab initio ground-state adiabatic potential energy surfaces for the water molecule",
-                surfaceDescription: "Ab initio adiabatic PESs of the ground electronic state of the water molecule, called "CVRQD", are extended. The CVRQD PESs are obtained from extrapolation to the complete basis set of nearly full configuration interaction valence-only electronic structure computations, augmented by core, relativistic, quantum electrodynamics, and diagonal Born-Oppenheimer corrections.",
+                surfaceDescription: 'Ab initio adiabatic PESs of the ground electronic state of the water molecule, called "CVRQD", are extended. The CVRQD PESs are obtained from extrapolation to the complete basis set of nearly full configuration interaction valence-only electronic structure computations, augmented by core, relativistic, quantum electrodynamics, and diagonal Born-Oppenheimer corrections.',
                 DOI: "10.1063/1.2378766",
                 references: {one: "06BaShZo", two: "J. Chem. Phys. 125, 204307 (2006)"},
                 year: "2006",
@@ -185,6 +185,6 @@ const array = ["Liam", "Cameron", "James", "Omree"];const molecules = [
 
 
 ReactDOM.render(
-  <App/>,
+  <App molecules = {molecules}/>,
   document.getElementById('react-container')
 )
