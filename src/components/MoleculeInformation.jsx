@@ -30,8 +30,8 @@ export default class MoleculeInformation extends React.Component {
         return <div>
         <h1>{this.props.molecule[0].molecule}</h1>
             <div style={styles.surfaceContainer}>
-            {this.props.molecule[0].potentialEnergySurface.exists ? <a href="#" className="img-rounded col-md-4" style={styles.surfaceButtonClickable}>Potential Energy Surfaces</a> :<div className="img-rounded col-md-4" style={styles.surfaceButtonNotClickable}>No Potential Energy Surface Available</div>}
-            {this.props.molecule[0].dipoleMomentSurface.exists ? <a href="#" className="img-rounded col-md-4" style={styles.surfaceButtonClickable}>Dipole Moment Surfaces</a> : <div className="img-rounded col-md-4" style={styles.surfaceButtonNotClickable}>No Dipole Moment Surface Available</div>}
+            {this.props.molecule[0].potentialEnergySurface.exists ? <a href="#" className="img-rounded col-md-4" style={styles.surfaceButtonClickable}>Potential Energy Surface(s)</a> :<div className="img-rounded col-md-4" style={styles.surfaceButtonNotClickable}>No Potential Energy Surface(s) Available</div>}
+            {this.props.molecule[0].dipoleMomentSurface.exists ? <a href="#" className="img-rounded col-md-4" style={styles.surfaceButtonClickable}>Dipole Moment Surface(s)</a> : <div className="img-rounded col-md-4" style={styles.surfaceButtonNotClickable}>No Dipole Moment Surface(s) Available</div>}
             </div>
             </div>
     }
