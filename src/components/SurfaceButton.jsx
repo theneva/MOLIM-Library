@@ -17,7 +17,9 @@ const styles = {
     background: "rgb(242, 242, 242)",
     height: "5vh",
     marginBottom: "1vh",
-    border: "solid 1px black"
+    border: "solid 1px black",
+    textDecoration: 'none',
+    color: 'black'
   }
 }
 
@@ -25,6 +27,6 @@ export default class SurfaceButton extends React.Component {
   render() {
     return this.props.type == "Potential Energy Surface(s)" ?
       <a href="#" className="img-rounded col-md-4" style={styles.surfaceButtonClickable}>{this.props.type}</a> :
-      <a href="#" className="img-rounded col-md-4" style={styles.surfaceButtonNotClickable}>{this.props.type}</a>
+      <a className="img-rounded col-md-4" style={styles.surfaceButtonNotClickable}>{this.props.type}</a>
   }
 }
