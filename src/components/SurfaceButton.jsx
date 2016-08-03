@@ -25,8 +25,9 @@ const styles = {
 
 export default class SurfaceButton extends React.Component {
   render() {
-    return this.props.type == "Potential Energy Surface(s)" ?
-      <a href="#" className="img-rounded col-md-4" style={styles.surfaceButtonClickable}>{this.props.type}</a> :
+    return this.props.type.substring(0, 2) !== "No" ?
+      <a href="#" className="img-rounded col-md-4" style={styles.surfaceButtonClickable}
+        onClick={()=>this.props.changeDisplay(this.props.type)}>{this.props.type}</a> :
       <a className="img-rounded col-md-4" style={styles.surfaceButtonNotClickable}>{this.props.type}</a>
   }
 }

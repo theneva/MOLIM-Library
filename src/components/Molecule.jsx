@@ -1,4 +1,4 @@
-import React from 'react'
+  import React from 'react'
 
 const Constituent = ({value, sub = 1, sup = 1}) => (
   <span>

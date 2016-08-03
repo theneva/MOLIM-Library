@@ -1,6 +1,6 @@
-import React from 'react'
-import Molecule from './Molecule.jsx'
-import SurfaceButton from './SurfaceButton.jsx'
+import React from 'react';
+import SurfaceButtonDisplay from './SurfaceButtonDisplay.jsx';
+import MoleculeDisplay from './MoleculeDisplay.jsx'
 
 const styles = {
   surfaceContainer: {
@@ -10,15 +10,28 @@ const styles = {
 }
 
 export default class MoleculeInformation extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      surfaces: true,
+      surfaceType: undefined
+    }
+  }
+
+  changeDisplay(surfaceType) {
+    this.setState({
+      surfaces: false,
+      surfaceType: surfaceType
+    })
+  }
+
   render() {
     return <div>
-      <Molecule constituents={this.props.molecule.molecule}/> {/* lol */}
-      <div style={styles.surfaceContainer}>
-        {this.props.molecule.potentialEnergySurface.exists ?
-          <SurfaceButton type="Potential Energy Surface(s)"/> : <SurfaceButton type="No Potential Energy Surface(s)"/>}
-        {this.props.molecule.dipoleMomentSurface.exists ?
-          <SurfaceButton type="Dipole Moment Surface(s)"/> : <SurfaceButton type="No Dipole Moment Surface(s)"/>}
-      </div>
+      {this.state.surfaces ?
+        <SurfaceButtonDisplay data={this.props.molecule} changeDisplay={this.changeDisplay.bind(this)}/> :
+        this.state.surfaceType ? <MoleculeDisplay name={this.props.molecule.molecule} data={this.props.molecule.potentialEnergySurface}/> :
+          <MoleculeDisplay name={this.props.molecule.molecule} data={this.props.molecule.dipoleMomentSurface}/> }
     </div>
   }
 }
