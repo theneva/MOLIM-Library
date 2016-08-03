@@ -1,4 +1,5 @@
 import React from 'react'
+import Molecule from './Molecule.jsx'
 
 const styles = {
   button: {
@@ -15,7 +16,7 @@ const styles = {
 export default class MoleculeName extends React.Component {
   render(){
     return <a href="#" className="img-rounded" style={styles.button} onClick={this.props.changePageState}>
-      {this.props.name}
+      <Molecule constituents={this.props.name}/>
     </a>
   }
 }

@@ -13,16 +13,14 @@ export default class App extends React.Component {
         super(props);
         this.state = {
             home: true,
-            displayMolecule: ""
+            displayMolecule: undefined
         }
     }
 
-    changePageState(e) {
-        console.log(this.props.molecules.filter((molecule)=>molecule.molecule == e.target.innerHTML));
-
+    changePageState(molecule) {
         this.setState({
             home: false,
-            displayMolecule: this.props.molecules.filter((molecule)=>molecule.molecule == e.target.innerHTML)
+            displayMolecule: molecule
         })
     }
 
