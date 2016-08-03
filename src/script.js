@@ -20,6 +20,7 @@ const molecules = [
             supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-142-028504",
             predictedEnergyLevels: ""
         },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "SO2",
@@ -48,7 +49,7 @@ const molecules = [
             supplementaryDescription: "A Fortran subroutine to calculate the DMS, 'DMS-N1'; and, the Ames-296K line list and comparison with HITRAN data and recent experiments.",
             supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-140-059411",
             predictedEnergyLevels: "Yes, rovibrational (J=0-80)"
-        },
+        }
     },
     {
         molecule: "CO2",
@@ -77,7 +78,7 @@ const molecules = [
             supplementaryDescription: "List of references for the experimental data used in this work; Fortran 90 codes of the DMS (purely CCSD(T)/aug-cc-pVQZ based) with testing program included; and, Ames-296K IR linelist for 12C16O2, with cutoff 1E-30 cm/molecule based on Ames-1 PES and the DMS, J=0-125 calculations.",
             supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-136-028213",
             predictedEnergyLevels: "Yes, rovibrational (J=0-125) - 'Ames-296K' IR line list"
-        },
+        }
     },
     {
         molecule: "H2O",
@@ -128,7 +129,7 @@ const molecules = [
                 supplementaryDescription: "Fortran programs containing the fitted PESs for the 16O, 17O, and 18O isotopologues.",
                 supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-128-046821",
                 predictedEnergyLevels: ""
-            },
+            }
         },
         dipoleMomentSurface: {
             exists: true,
@@ -175,8 +176,8 @@ const molecules = [
                 supplementaryDescription: "A Fortran subroutine to evaluate the DMS, and four tables of intensity ratios (theory/experiment) for various methods and data.",
                 supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-113-304040",
                 predictedEnergyLevels: ""
-            },
-        },
+            }
+        }
     },
     {
         molecule: "H3",
@@ -193,7 +194,8 @@ const molecules = [
             supplementaryDescription: "Fortran routines for the BKMP2 H3 surface; a Fortran test program to check that the surface is being evaluated correctly on your computer, and a text file containing the correct output from the test program; all the energies used to fit the BKMP2 H3 surface (it contains 5 files of ground-state ab initio energies, and 2 files of non-ab-initio energies that were generated to constrain the surface at short and long range); and, all the ab initio H3 energies computed by the authors (it contains 5 files of ab initio energies, including some excited state energies).",
             supplementaryLink: "http://www.cita.utoronto.ca/~pgmartin/h3pes/index.html, with extra material available from: ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA-95-4331-170",
             predictedEnergyLevels: "No, only ab initio energies"
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "HDO",
@@ -210,7 +212,8 @@ const molecules = [
             supplementaryDescription: "HDO_07 PES as a Fortran subroutine, and a file containing all assigned J=0 levels.",
             supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-127-031744",
             predictedEnergyLevels: "No"
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "H2S",
@@ -256,7 +259,8 @@ const molecules = [
             supplementaryDescription: "Fortran routines for H-CO and CO potentials; output of the Fortran program, test; database with 4401 geometries and ab initio interaction energies; and, input of MOLPRO run to get ab initio interaction energy for one geometry.",
             supplementaryLink: "http://pubs.acs.org/doi/suppl/10.1021/jp402470b",
             predictedEnergyLevels: ""
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "He-O2",
@@ -273,7 +277,8 @@ const molecules = [
             supplementaryDescription: "Fortran 77 routines to evaluate the fit of the 3D He-O2 interaction potential; the O2 potential described in J. F. Babb  and A. Dalgarno, Phys. Rev. A, vol 51, p. 3021 (1995); the database of ab initio points; example output of the program; the MOLPRO job used for the ab initio calculations.",
             supplementaryLink: "http://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-113-308045/",
             predictedEnergyLevels: ""
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "H3+",
@@ -290,7 +295,8 @@ const molecules = [
             supplementaryDescription: "Fortran 77 code for the ground state PES.",
             supplementaryLink: "http://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-129-612834/",
             predictedEnergyLevels: "Rovibrational spectrum available as part of paper."
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "H2CO",
@@ -307,7 +313,8 @@ const molecules = [
             supplementaryDescription: "Programs (one for ab initio and one for refined potentials); potential energy values of grids; and, experimental and predicted energies.",
             supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-134-050123",
             predictedEnergyLevels: "Yes, rovibrational"
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "H2CS",
@@ -353,7 +360,8 @@ const molecules = [
             supplementaryDescription: "Fortran routines for the BMKP H4 surface; a Fortran test program to check that the surface is being evaluated correctly on your computer; all the energies used to fit the BMKP H4 surface (it contains 5 files of ground-state ab initio energies, and 5 files of non-ab-initio energies that were generated to constrain the surface at short and long range); and, all the ab initio H4 energies computed by the authors (it contains 7 files of ab initio energies, including excited state energies).",
             supplementaryLink: "http://www.cita.utoronto.ca/~pgmartin/h4pes/index.html. Also available from here, with extra material: ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-115-304140",
             predictedEnergyLevels: ""
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "HSOH",
@@ -412,7 +420,8 @@ const molecules = [
                 supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285211000932 (Under 'Appendix A. Supplementary material')",
                 predictedEnergyLevels: ""
             }
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "CH3",
@@ -429,12 +438,14 @@ const molecules = [
             supplementaryDescription: "Fortran 90 routine for calculating PESs of CH3; vibrational energy values up to 8000 cm-1  for CH3 and its isotopologues.",
             supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-143-057548",
             predictedEnergyLevels: "Yes. Vibrational energy values up to 8000 cm-1  for CH3 and its isotopologues."
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "SbH3",
         numberOfAtoms: "4",
 
+        potentialEnergySurface: {},
         dipoleMomentSurface: {
             exists: true,
             paperTitle: "A theoretical-spectroscopy, ab-initio-based study of the electronic ground state of 121SbH3",
@@ -492,7 +503,8 @@ const molecules = [
             supplementaryDescription: "A listing of the 21390 ab initio points defining the 4D PES for N2O-He; a Fortran subroutine for generating the 4D MLR PES for N2O-He; a Fortran subroutine for generating the 2D MLR potential energy surfaces for (14)N2(16)O-He; a full listing of the parameters defining the analytic 4D MLR potential energy surfaces for N2O-He; and, a list of the calculated vibrational band origin shifts of N2O plotted in Fig.3 in the paper.",
             supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-137-039234",
             predictedEnergyLevels: ""
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "CH4",
@@ -567,7 +579,8 @@ const molecules = [
             supplementaryDescription: "Source Fortran code to construct PESs for CH3Cl; parameters of the CBS-35 HL and CBS-37 HL PESs; and, vibrational energy level assignment of CH3Cl.",
             supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-142-009525",
             predictedEnergyLevels: "Yes, vibrational energy levels."
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "H2O-CO2",
@@ -584,7 +597,8 @@ const molecules = [
             supplementaryDescription: "8820 intermolecular geometries; 8820 sets of intermolecular energies, one set per geometry (six energies are given: SCF/TZ, SCF/QZ, MP2/TZ, MP2/QZ, CCSD(T)/TZ and the estimated CCSD(T)/CBS interaction energy. Units are Hartree.); a Fortran subroutine and example main program to evaluate the fitted CO2-H2O energy in Hartree; input reference geometries for the program for CO2 and H2O; and, parameters for the fitted potential, in Hartree and Bohr.",
             supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-134-007114",
             predictedEnergyLevels: ""
-        }
+        },
+        dipoleMomentSurface: {}
     },
     {
         molecule: "HCN-HNC",
