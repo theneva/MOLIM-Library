@@ -16,7 +16,8 @@ export default class Home extends React.Component {
 
             <div style={styles.listContainer}>
                 <MoleculeList type="Diatomics"
-                              nameArray={this.props.molecules.filter((molecule)=>molecule.numberOfAtoms==2)} changePageState={this.props.changePageState}/>
+                              nameArray={this.props.molecules.filter((molecule)=>molecule.numberOfAtoms==2)}
+                              changePageState={this.props.changePageState}/>
                 <MoleculeList type="Triatomics"
                               nameArray={this.props.molecules.filter((molecule)=>molecule.numberOfAtoms==3)} changePageState={this.props.changePageState}/>
                 <MoleculeList type="Tetratomics"
