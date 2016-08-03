@@ -1,11 +1,38 @@
 import React from 'react'
 
+const styles = {
+    surfaceContainer: {
+        display: 'flex',
+        flexDirection: 'column'
+    },
+    surfaceButtonClickable: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "rgb(242, 242, 242)",
+        height: "5vh",
+        marginBottom: "1vh",
+        border: "solid 1px black"
+    },
+    surfaceButtonNotClickable: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "rgb(242, 242, 242)",
+        height: "5vh",
+        marginBottom: "1vh",
+        border: "solid 1px black"
+    }
+    }
+
 export default class MoleculeInformation extends React.Component {
     render() {
         return <div>
         <h1>{this.props.molecule[0].molecule}</h1>
-            {this.props.molecule[0].dipoleMomentSurface.exists ? <div>Dipole Moment Surface</div> : <div>No Dipole Moment Surface</div>}
-            {this.props.molecule[0].potentialEnergySurface.exists ? <div>Potential Energy Surface</div> :<div>No Potential Energy Surface</div>}
-        </div>
+            <div style={styles.surfaceContainer}>
+            {this.props.molecule[0].potentialEnergySurface.exists ? <a href="#" className="img-rounded col-md-4" style={styles.surfaceButtonClickable}>Potential Energy Surfaces</a> :<div className="img-rounded col-md-4" style={styles.surfaceButtonNotClickable}>No Potential Energy Surface Available</div>}
+            {this.props.molecule[0].dipoleMomentSurface.exists ? <a href="#" className="img-rounded col-md-4" style={styles.surfaceButtonClickable}>Dipole Moment Surfaces</a> : <div className="img-rounded col-md-4" style={styles.surfaceButtonNotClickable}>No Dipole Moment Surface Available</div>}
+            </div>
+            </div>
     }
 }
