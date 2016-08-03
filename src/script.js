@@ -270,8 +270,8 @@ const molecules = [
   },
   {
     molecule: [
-      {value: "H-CO (X", sub: 2},
-      {value: "A)", sub: "1"},
+      {value: "H-CO (X", sup: 2},
+      {value: "A')", sub: "1"},
     ],
     numberOfAtoms: "3",
 
@@ -333,8 +333,8 @@ const molecules = [
   },
   {
     molecule: [
-      {value: "H (X", sub: "2"},
-      {value: "CO)", sub: "1"},
+      {value: "H", sub: "2"},
+      {value: "CO", sub: "1"},
     ],
     numberOfAtoms: "4",
 
@@ -498,7 +498,6 @@ const molecules = [
     numberOfAtoms: "4",
 
     potentialEnergySurface: {},
-
     dipoleMomentSurface: {
       exists: true,
       paperTitle: "A theoretical-spectroscopy, ab-initio-based study of the electronic ground state of 121SbH3",
