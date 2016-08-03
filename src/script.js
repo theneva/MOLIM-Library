@@ -23,7 +23,7 @@ const molecules = [
       supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-142-028504",
       predictedEnergyLevels: ""
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
 
   {
@@ -99,7 +99,7 @@ const molecules = [
 
     potentialEnergySurface: {
       exists: true,
-      one: {
+      array: [{
         paperTitle: "Spectroscopically determined potential energy surface of H162OH216O up to 25 000 cm−1",
         surfaceDescription: "A PES is constructed by fitting to observed vibration-rotation energy levels of the system using the exact kinetic energy operator nuclear motion program DVR3D.",
         DOI: "10.1063/1.1532001",
@@ -110,39 +110,40 @@ const molecules = [
         supplementaryLink: "http://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-118-006305/ ",
         predictedEnergyLevels: "No"
       },
-      two: {
-        paperTitle: "The determination of an accurate isotope dependent potential energy surface for water from extensive ab initio calculations and experimental data",
-        surfaceDescription: "Ab initio isotope dependent PES, computed at 771 points using the 5Z basis set. For the points below 40000 cm-1, the core contribution was also determined using the CQZ basis.",
-        DOI: "10.1063/1.473987",
-        references: {one: "97PaScxx", two: "J. Chem. Phys. 106, 4618 (1997)"},
-        year: "1997",
-        email: "partridge@pegasus.arc.nasa.gov",
-        supplementaryDescription: "Fortran programs to evaluate the PES; V5Z ab initio data; the data displayed in Figure 8 of the manuscript; and, computed energy levels.",
-        supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA-106-4618",
-        predictedEnergyLevels: ""
-      },
-      three: {
-        paperTitle: "CVRQD ab initio ground-state adiabatic potential energy surfaces for the water molecule",
-        surfaceDescription: 'Ab initio adiabatic PESs of the ground electronic state of the water molecule, called "CVRQD", are extended. The CVRQD PESs are obtained from extrapolation to the complete basis set of nearly full configuration interaction valence-only electronic structure computations, augmented by core, relativistic, quantum electrodynamics, and diagonal Born-Oppenheimer corrections.',
-        DOI: "10.1063/1.2378766",
-        references: {one: "06BaShZo", two: "J. Chem. Phys. 125, 204307 (2006)"},
-        year: "2006",
-        email: "csaszar@ chem.elte.hu",
-        supplementaryDescription: "Fortran routines for the CVRQD PESs for the water isotopologues to be used with the program suite DVR3D.",
-        supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-125-303643",
-        predictedEnergyLevels: ""
-      },
-      four: {
-        paperTitle: "Water line lists close to experimental accuracy using a spectroscopically determined potential energy surface for H2O16H2O16, H2O17H2O17, and H2O18",
-        surfaceDescription: "Semitheoretical PES obtained by morphing an ab initio potential using experimental energy levels.",
-        DOI: "10.1063/1.2927903",
-        references: {one: "08ShZoOv", two: "J. Chem. Phys. 128, 224306 (2008)"},
-        year: "2008",
-        email: "j.tennyson@ucl.ac.uk",
-        supplementaryDescription: "Fortran programs containing the fitted PESs for the 16O, 17O, and 18O isotopologues.",
-        supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-128-046821",
-        predictedEnergyLevels: ""
-      },
+        {
+          paperTitle: "The determination of an accurate isotope dependent potential energy surface for water from extensive ab initio calculations and experimental data",
+          surfaceDescription: "Ab initio isotope dependent PES, computed at 771 points using the 5Z basis set. For the points below 40000 cm-1, the core contribution was also determined using the CQZ basis.",
+          DOI: "10.1063/1.473987",
+          references: {one: "97PaScxx", two: "J. Chem. Phys. 106, 4618 (1997)"},
+          year: "1997",
+          email: "partridge@pegasus.arc.nasa.gov",
+          supplementaryDescription: "Fortran programs to evaluate the PES; V5Z ab initio data; the data displayed in Figure 8 of the manuscript; and, computed energy levels.",
+          supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA-106-4618",
+          predictedEnergyLevels: ""
+        },
+        {
+          paperTitle: "CVRQD ab initio ground-state adiabatic potential energy surfaces for the water molecule",
+          surfaceDescription: 'Ab initio adiabatic PESs of the ground electronic state of the water molecule, called "CVRQD", are extended. The CVRQD PESs are obtained from extrapolation to the complete basis set of nearly full configuration interaction valence-only electronic structure computations, augmented by core, relativistic, quantum electrodynamics, and diagonal Born-Oppenheimer corrections.',
+          DOI: "10.1063/1.2378766",
+          references: {one: "06BaShZo", two: "J. Chem. Phys. 125, 204307 (2006)"},
+          year: "2006",
+          email: "csaszar@ chem.elte.hu",
+          supplementaryDescription: "Fortran routines for the CVRQD PESs for the water isotopologues to be used with the program suite DVR3D.",
+          supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-125-303643",
+          predictedEnergyLevels: ""
+        },
+        {
+          paperTitle: "Water line lists close to experimental accuracy using a spectroscopically determined potential energy surface for H2O16H2O16, H2O17H2O17, and H2O18",
+          surfaceDescription: "Semitheoretical PES obtained by morphing an ab initio potential using experimental energy levels.",
+          DOI: "10.1063/1.2927903",
+          references: {one: "08ShZoOv", two: "J. Chem. Phys. 128, 224306 (2008)"},
+          year: "2008",
+          email: "j.tennyson@ucl.ac.uk",
+          supplementaryDescription: "Fortran programs containing the fitted PESs for the 16O, 17O, and 18O isotopologues.",
+          supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-128-046821",
+          predictedEnergyLevels: ""
+        }
+      ],
     },
     dipoleMomentSurface: {
       exists: true,
@@ -210,7 +211,7 @@ const molecules = [
       supplementaryLink: "http://www.cita.utoronto.ca/~pgmartin/h3pes/index.html, with extra material available from: ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA-95-4331-170",
       predictedEnergyLevels: "No, only ab initio energies"
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
@@ -233,7 +234,7 @@ const molecules = [
       supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-127-031744",
       predictedEnergyLevels: "No"
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
@@ -286,7 +287,7 @@ const molecules = [
       supplementaryLink: "http://pubs.acs.org/doi/suppl/10.1021/jp402470b",
       predictedEnergyLevels: ""
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
@@ -307,7 +308,7 @@ const molecules = [
       supplementaryLink: "http://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-113-308045/",
       predictedEnergyLevels: ""
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
@@ -328,7 +329,7 @@ const molecules = [
       supplementaryLink: "http://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-129-612834/",
       predictedEnergyLevels: "Rovibrational spectrum available as part of paper."
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
@@ -349,7 +350,7 @@ const molecules = [
       supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-134-050123",
       predictedEnergyLevels: "Yes, rovibrational"
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
@@ -401,7 +402,7 @@ const molecules = [
       supplementaryLink: "http://www.cita.utoronto.ca/~pgmartin/h4pes/index.html. Also available from here, with extra material: ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-115-304140",
       predictedEnergyLevels: ""
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
@@ -466,7 +467,7 @@ const molecules = [
         predictedEnergyLevels: ""
       }
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
@@ -487,7 +488,7 @@ const molecules = [
       supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-143-057548",
       predictedEnergyLevels: "Yes. Vibrational energy values up to 8000 cm-1  for CH3 and its isotopologues."
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
@@ -495,6 +496,8 @@ const molecules = [
       {value: "H", sub: "3"},
     ],
     numberOfAtoms: "4",
+
+    potentialEnergySurface: {},
 
     dipoleMomentSurface: {
       exists: true,
@@ -564,7 +567,7 @@ const molecules = [
       supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-137-039234",
       predictedEnergyLevels: ""
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
@@ -650,7 +653,7 @@ const molecules = [
       supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-142-009525",
       predictedEnergyLevels: "Yes, vibrational energy levels."
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
@@ -673,7 +676,7 @@ const molecules = [
       supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-134-007114",
       predictedEnergyLevels: ""
     },
-    dipoleMomentSurface:{}
+    dipoleMomentSurface: {}
   },
   {
     molecule: [
