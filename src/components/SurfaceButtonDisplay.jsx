@@ -5,14 +5,14 @@ import Molecule from './Molecule.jsx'
 const styles = {
   surfaceButtonContainer: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
   }
 }
 
 export default class SurfaceButtonDisplay extends React.Component {
   render() {
     return <div>
-      <Molecule constituents={this.props.data.molecule}/> {/* lol */}
+      <h1><Molecule constituents={this.props.data.molecule}/></h1> {/* lol */}
       <div style={styles.surfaceButtonContainer}>
         {this.props.data.potentialEnergySurface.exists ?
           <SurfaceButton type="Potential Energy Surface(s)" data={this.props.data} changeDisplay={this.props.changeDisplay}/> :
