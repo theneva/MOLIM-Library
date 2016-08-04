@@ -13,7 +13,7 @@ export default class MoleculeList extends React.Component {
   render() {
     return <div style={styles.container}>
       <h3 style={styles.title}>{this.props.type}</h3>
-      {this.props.nameArray.map((name, index)=> (
+      {this.props.nameArray.sort((left, right) => left.molecule[0].value > right.molecule[0].value).map((name, index)=> (
         <MoleculeName key={index} name={name.molecule}
           changePageState={() => this.props.changePageState(this.props.nameArray[index])}/>
       ))}
