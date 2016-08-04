@@ -4,12 +4,20 @@ import MoleculeSurfaceDescription from './MoleculeSurfaceDescription.jsx'
 const styles = {
   partContainer: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyItems: 'center'
   },
   parts: {
-    backgroundColor: '#DDDDDD',
-    marginBottom: '2vh',
+    display: 'flex',
+    flexDirection: 'column',
+    background: 'rgb(242, 242, 242)',
+    marginTop: '1vh',
+    marginBottom: '1vh',
+    paddingLeft: '5vh',
+    paddingRight: '5vh',
     width: '70vw',
+    border: 'solid 1px black'
   }
 }
 
@@ -33,8 +41,8 @@ export default class MoleculeDisplay extends React.Component {
       {this.props.data.array != undefined ?
         this.state.arrayNumber == undefined ? <div style={styles.partContainer}>
           {this.props.data.array.map((element, index)=> {
-            return <a href="#" style={styles.parts}
-              onClick={() => this.changeArrayNumber(index)}>{element.surfaceDescription}</a>
+            return <a className="img-rounded" href="#" style={styles.parts}
+              onClick={() => this.changeArrayNumber(index)}><h3>{element.paperTitle}</h3><p>{element.surfaceDescription}</p></a>
           })}
         </div> : <MoleculeSurfaceDescription name={this.props.name} data={this.props.data.array[this.state.arrayNumber]}/> :
         <MoleculeSurfaceDescription name={this.props.name} data={this.props.data}/>}
