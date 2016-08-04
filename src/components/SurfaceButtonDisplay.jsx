@@ -5,7 +5,7 @@ import Molecule from './Molecule.jsx'
 const styles = {
   surfaceButtonContainer: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column'
   }
 }
 
