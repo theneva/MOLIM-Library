@@ -755,15 +755,18 @@ const molecules = [
 
         potentialEnergySurface: {
             exists: true,
-            paperTitle: "Intermolecular potential energy surface and second virial coefficients for the water–CO2 dimer",
-            surfaceDescription: "5D intermolecular PES calculated using second-order Møller-Plesset perturbation theory and CCSD(T). aug-cc-pVTZ and aug-cc-pVQZ basis sets used for MP2 calculations, aug-cc-pVTZ used for CCSD(T) calculations.",
-            DOI: "10.1063/1.3574345",
-            references: {one: "11WhHaxx", two: "J. Chem. Phys. 134, 134309 (2011)"},
-            year: "2011",
-            email: "Richard.Wheatley@nottingham.ac.uk or aharvey@boulder.nist.gov",
-            supplementaryDescription: "8820 intermolecular geometries; 8820 sets of intermolecular energies, one set per geometry (six energies are given: SCF/TZ, SCF/QZ, MP2/TZ, MP2/QZ, CCSD(T)/TZ and the estimated CCSD(T)/CBS interaction energy. Units are Hartree.); a Fortran subroutine and example main program to evaluate the fitted CO2-H2O energy in Hartree; input reference geometries for the program for CO2 and H2O; and, parameters for the fitted potential, in Hartree and Bohr.",
-            supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-134-007114",
-            predictedEnergyLevels: "NA"
+            array: [{
+                paperTitle: "Intermolecular potential energy surface and second virial coefficients for the water–CO2 dimer",
+                surfaceDescription: "5D intermolecular PES calculated using second-order Møller-Plesset perturbation theory and CCSD(T). aug-cc-pVTZ and aug-cc-pVQZ basis sets used for MP2 calculations, aug-cc-pVTZ used for CCSD(T) calculations.",
+                DOI: "10.1063/1.3574345",
+                references: {one: "11WhHaxx", two: "J. Chem. Phys. 134, 134309 (2011)"},
+                year: "2011",
+                email: "Richard.Wheatley@nottingham.ac.uk or aharvey@boulder.nist.gov",
+                supplementaryDescription: "8820 intermolecular geometries; 8820 sets of intermolecular energies, one set per geometry (six energies are given: SCF/TZ, SCF/QZ, MP2/TZ, MP2/QZ, CCSD(T)/TZ and the estimated CCSD(T)/CBS interaction energy. Units are Hartree.); a Fortran subroutine and example main program to evaluate the fitted CO2-H2O energy in Hartree; input reference geometries for the program for CO2 and H2O; and, parameters for the fitted potential, in Hartree and Bohr.",
+                supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-134-007114",
+                predictedEnergyLevels: "NA"
+            }
+            ]
         },
         dipoleMomentSurface: {}
     },
