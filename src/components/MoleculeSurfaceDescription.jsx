@@ -4,7 +4,6 @@ import Molecule from './Molecule.jsx';
 export default class MoleculeSurfaceDescription extends React.Component {
   render() {
     return <div>
-      <h1><Molecule constituents={this.props.name}/></h1>
       <h5>Paper Title:</h5><p>{this.props.data.paperTitle}</p>
       <h5>Year of Publication:</h5><p>{this.props.data.year}</p>
       <h5>Surface Description:</h5><p>{this.props.data.surfaceDescription}</p>

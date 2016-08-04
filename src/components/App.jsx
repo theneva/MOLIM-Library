@@ -2,12 +2,6 @@ import React from 'react';
 import Home from './Home.jsx';
 import MoleculeInformation from './MoleculeInformation.jsx';
 
-const styles = {
-    container: {
-        padding: '1vh 3vw 1vh 3vw'
-    }
-}
-
 export default class App extends React.Component {
     constructor(props) {
         super(props);
@@ -25,7 +19,7 @@ export default class App extends React.Component {
     }
 
     render() {
-        return <div style={styles.container}>
+        return <div>
             {this.state.home ? <Home molecules={this.props.molecules}
                                      changePageState={this.changePageState.bind(this)}/> :
                 <MoleculeInformation molecule={this.state.displayMolecule}/>}
