@@ -7,9 +7,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
-    width: '100%',
-    height: '82vh',
   },
   parts: {
     display: 'flex',
