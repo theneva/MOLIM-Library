@@ -20,6 +20,7 @@ export default class MoleculeInformation extends React.Component {
   }
 
   changeDisplay(surfaceType) {
+    console.log(surfaceType)
     this.setState({
       surfaces: false,
       surfaceType: surfaceType
@@ -30,7 +31,7 @@ export default class MoleculeInformation extends React.Component {
     return <div>
       {this.state.surfaces ?
         <SurfaceButtonDisplay data={this.props.molecule} changeDisplay={this.changeDisplay.bind(this)}/> :
-        this.state.surfaceType ? <MoleculeDisplay name={this.props.molecule.molecule} data={this.props.molecule.potentialEnergySurface}/> :
+        this.state.surfaceType == "Potential Energy Surface(s)" ? <MoleculeDisplay name={this.props.molecule.molecule} data={this.props.molecule.potentialEnergySurface}/> :
           <MoleculeDisplay name={this.props.molecule.molecule} data={this.props.molecule.dipoleMomentSurface}/> }
     </div>
   }

@@ -90,109 +90,110 @@ const molecules = [
             predictedEnergyLevels: "Yes, rovibrational (J=0-125) - 'Ames-296K' IR line list"
         },
     },
-    {
-        molecule: [
-            {value: "H", sub: 2},
-            {value: "O", sub: 1},
-        ],
-        numberOfAtoms: "3",
+  {
+    molecule: [
+      {value: "H", sub: 2},
+      {value: "O", sub: 1},
+    ],
+    numberOfAtoms: "3",
 
-        potentialEnergySurface: {
-            exists: true,
-            array: [{
-                paperTitle: "Spectroscopically determined potential energy surface of H162OH216O up to 25 000 cm−1",
-                surfaceDescription: "A PES is constructed by fitting to observed vibration-rotation energy levels of the system using the exact kinetic energy operator nuclear motion program DVR3D.",
-                DOI: "10.1063/1.1532001",
-                references: {one: "03ShPoZo", two: "J. Chem. Phys. 118, 2124 (2003)"},
-                year: "2003",
-                email: "j.tennyson@ucl.ac.uk",
-                supplementaryDescription: "Fortran programs giving the PES for two different fits ('A' and 'B'); H16O levels regarded as suspicious; and, reassigned transitions.",
-                supplementaryLink: "http://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-118-006305/ ",
-                predictedEnergyLevels: "No"
-            },
-                {
-                    paperTitle: "The determination of an accurate isotope dependent potential energy surface for water from extensive ab initio calculations and experimental data",
-                    surfaceDescription: "Ab initio isotope dependent PES, computed at 771 points using the 5Z basis set. For the points below 40000 cm-1, the core contribution was also determined using the CQZ basis.",
-                    DOI: "10.1063/1.473987",
-                    references: {one: "97PaScxx", two: "J. Chem. Phys. 106, 4618 (1997)"},
-                    year: "1997",
-                    email: "partridge@pegasus.arc.nasa.gov",
-                    supplementaryDescription: "Fortran programs to evaluate the PES; V5Z ab initio data; the data displayed in Figure 8 of the manuscript; and, computed energy levels.",
-                    supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA-106-4618",
-                    predictedEnergyLevels: "NA"
-                },
-                {
-                    paperTitle: "CVRQD ab initio ground-state adiabatic potential energy surfaces for the water molecule",
-                    surfaceDescription: 'Ab initio adiabatic PESs of the ground electronic state of the water molecule, called "CVRQD", are extended. The CVRQD PESs are obtained from extrapolation to the complete basis set of nearly full configuration interaction valence-only electronic structure computations, augmented by core, relativistic, quantum electrodynamics, and diagonal Born-Oppenheimer corrections.',
-                    DOI: "10.1063/1.2378766",
-                    references: {one: "06BaShZo", two: "J. Chem. Phys. 125, 204307 (2006)"},
-                    year: "2006",
-                    email: "csaszar@ chem.elte.hu",
-                    supplementaryDescription: "Fortran routines for the CVRQD PESs for the water isotopologues to be used with the program suite DVR3D.",
-                    supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-125-303643",
-                    predictedEnergyLevels: "NA"
-                },
-                {
-                    paperTitle: "Water line lists close to experimental accuracy using a spectroscopically determined potential energy surface for H2O16H2O16, H2O17H2O17, and H2O18",
-                    surfaceDescription: "Semitheoretical PES obtained by morphing an ab initio potential using experimental energy levels.",
-                    DOI: "10.1063/1.2927903",
-                    references: {one: "08ShZoOv", two: "J. Chem. Phys. 128, 224306 (2008)"},
-                    year: "2008",
-                    email: "j.tennyson@ucl.ac.uk",
-                    supplementaryDescription: "Fortran programs containing the fitted PESs for the 16O, 17O, and 18O isotopologues.",
-                    supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-128-046821",
-                    predictedEnergyLevels: "NA"
-                }
-            ],
+    potentialEnergySurface: {
+      exists: true,
+      array: [{
+        paperTitle: "Spectroscopically determined potential energy surface of H162OH216O up to 25 000 cm−1",
+        surfaceDescription: "A PES is constructed by fitting to observed vibration-rotation energy levels of the system using the exact kinetic energy operator nuclear motion program DVR3D.",
+        DOI: "10.1063/1.1532001",
+        references: {one: "03ShPoZo", two: "J. Chem. Phys. 118, 2124 (2003)"},
+        year: "2003",
+        email: "j.tennyson@ucl.ac.uk",
+        supplementaryDescription: "Fortran programs giving the PES for two different fits ('A' and 'B'); H16O levels regarded as suspicious; and, reassigned transitions.",
+        supplementaryLink: "http://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-118-006305/ ",
+        predictedEnergyLevels: "No"
+      },
+        {
+          paperTitle: "The determination of an accurate isotope dependent potential energy surface for water from extensive ab initio calculations and experimental data",
+          surfaceDescription: "Ab initio isotope dependent PES, computed at 771 points using the 5Z basis set. For the points below 40000 cm-1, the core contribution was also determined using the CQZ basis.",
+          DOI: "10.1063/1.473987",
+          references: {one: "97PaScxx", two: "J. Chem. Phys. 106, 4618 (1997)"},
+          year: "1997",
+          email: "partridge@pegasus.arc.nasa.gov",
+          supplementaryDescription: "Fortran programs to evaluate the PES; V5Z ab initio data; the data displayed in Figure 8 of the manuscript; and, computed energy levels.",
+          supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA-106-4618",
+          predictedEnergyLevels: "NA"
         },
-        dipoleMomentSurface: {
-            exists: true,
-            array: [{
-                paperTitle: "The determination of an accurate isotope dependent potential energy surface for water from extensive ab initio calculations and experimental data",
-                surfaceDescription: "Ab initio isotope dependent DMS, computed at 771 points using the 5Z basis set. For the points below 40000 cm-1, the core contribution was also determined using the CQZ basis.",
-                DOI: "10.1063/1.473987",
-                references: {one: "97PaScxx", two: "J. Chem. Phys. 106, 4618 (1997)"},
-                year: "1997",
-                email: "partridge@pegasus.arc.nasa.gov",
-                supplementaryDescription: "Fortran programs to evaluate the DMS; V5Z ab initio data; the data displayed in Figure 8 of the manuscript; and, computed energy levels.",
-                supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA-106-4618",
-                predictedEnergyLevels: "NA"
-            },
-            {
-                paperTitle: "A new ab initio ground-state dipole moment surface for the water molecule",
-                surfaceDescription: "Valence only DMS computed at the internally contracted multireference configuration interaction level using the aug-cc-pV6Z basis set.",
-                DOI: "10.1063/1.2817606",
-                references: {one: "08LoToTe", two: "J. Chem. Phys. 128, 044304 (2008)"},
-                year: "2008",
-                email: "j.tennyson@ucl.ac.uk",
-                supplementaryDescription: "A Fortran program of the CVR DMS; the computer au-cc-pV6Z MRCI dipoles; and, the relativistic and core correction dipoles.",
-                supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-127-307747",
-                predictedEnergyLevels: "No"
-            },
-            {
-                paperTitle: "A global, high accuracy ab initio dipole moment surface for the electronic ground state of the water molecule",
-                surfaceDescription: "A highly accurate, global DMS, 'LTP2011', is calculated using ab initio methods. It is based on all-electron, internally contracted multireference configuration interaction, including size-extensivity corrections in the aug-cc-pCV6Z basis set. Three more DMSs were produced and are made available, mainly for testing purposes: LTP2011P - as LTP2011 but based on Pople-corrected dipoles; LTP2011NR - as LTP2011 but does not include the relativistic corrections; and, LTP2011S - as LTP2011 but includes fewer fitting parameters.",
-                DOI: "10.1063/1.3604934",
-                references: {one: "11LoTePo", two: "J. Chem. Phys. 135, 034113 (2011)"},
-                year: "2011",
-                email: "j.tennyson@ucl.ac.uk",
-                supplementaryDescription: "A Fortran 95 routine containing the LTP2011, LTP2011S, LTP2011NR, and LTP20112011P DMSs and the ab initio data on which they are based.",
-                supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-135-042125",
-                predictedEnergyLevels: "No"
-            },
-            {
-                paperTitle: "Convergence testing of the analytic representation of an ab initio dipole moment function for water: Improved fitting yields improved intensities",
-                surfaceDescription: "Calculations made using an analytic representation of an ab initio DMS.",
-                DOI: "10.1063/1.1311392",
-                references: {one: "00ScPaxx", two: "J. Chem. Phys. 113, 6592 (2000)"},
-                year: "2000",
-                email: "schwenke@pegasus.arc.nasa.gov",
-                supplementaryDescription: "A Fortran subroutine to evaluate the DMS, and four tables of intensity ratios (theory/experiment) for various methods and data.",
-                supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-113-304040",
-                predictedEnergyLevels: "NA"
-            },
-        ],
+        {
+          paperTitle: "CVRQD ab initio ground-state adiabatic potential energy surfaces for the water molecule",
+          surfaceDescription: 'Ab initio adiabatic PESs of the ground electronic state of the water molecule, called "CVRQD", are extended. The CVRQD PESs are obtained from extrapolation to the complete basis set of nearly full configuration interaction valence-only electronic structure computations, augmented by core, relativistic, quantum electrodynamics, and diagonal Born-Oppenheimer corrections.',
+          DOI: "10.1063/1.2378766",
+          references: {one: "06BaShZo", two: "J. Chem. Phys. 125, 204307 (2006)"},
+          year: "2006",
+          email: "csaszar@ chem.elte.hu",
+          supplementaryDescription: "Fortran routines for the CVRQD PESs for the water isotopologues to be used with the program suite DVR3D.",
+          supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-125-303643",
+          predictedEnergyLevels: "NA"
+        },
+        {
+          paperTitle: "Water line lists close to experimental accuracy using a spectroscopically determined potential energy surface for H2O16H2O16, H2O17H2O17, and H2O18",
+          surfaceDescription: "Semitheoretical PES obtained by morphing an ab initio potential using experimental energy levels.",
+          DOI: "10.1063/1.2927903",
+          references: {one: "08ShZoOv", two: "J. Chem. Phys. 128, 224306 (2008)"},
+          year: "2008",
+          email: "j.tennyson@ucl.ac.uk",
+          supplementaryDescription: "Fortran programs containing the fitted PESs for the 16O, 17O, and 18O isotopologues.",
+          supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-128-046821",
+          predictedEnergyLevels: "NA"
+        }
+      ],
     },
+
+    dipoleMomentSurface: {
+      exists: true,
+      array: [{
+        paperTitle: "The determination of an accurate isotope dependent potential energy surface for water from extensive ab initio calculations and experimental data",
+        surfaceDescription: "Ab initio isotope dependent DMS, computed at 771 points using the 5Z basis set. For the points below 40000 cm-1, the core contribution was also determined using the CQZ basis.",
+        DOI: "10.1063/1.473987",
+        references: {one: "97PaScxx", two: "J. Chem. Phys. 106, 4618 (1997)"},
+        year: "1997",
+        email: "partridge@pegasus.arc.nasa.gov",
+        supplementaryDescription: "Fortran programs to evaluate the DMS; V5Z ab initio data; the data displayed in Figure 8 of the manuscript; and, computed energy levels.",
+        supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA-106-4618",
+        predictedEnergyLevels: "NA"
+      },
+        {
+          paperTitle: "A new ab initio ground-state dipole moment surface for the water molecule",
+          surfaceDescription: "Valence only DMS computed at the internally contracted multireference configuration interaction level using the aug-cc-pV6Z basis set.",
+          DOI: "10.1063/1.2817606",
+          references: {one: "08LoToTe", two: "J. Chem. Phys. 128, 044304 (2008)"},
+          year: "2008",
+          email: "j.tennyson@ucl.ac.uk",
+          supplementaryDescription: "A Fortran program of the CVR DMS; the computer au-cc-pV6Z MRCI dipoles; and, the relativistic and core correction dipoles.",
+          supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-127-307747",
+          predictedEnergyLevels: "No"
+        },
+        {
+          paperTitle: "A global, high accuracy ab initio dipole moment surface for the electronic ground state of the water molecule",
+          surfaceDescription: "A highly accurate, global DMS, 'LTP2011', is calculated using ab initio methods. It is based on all-electron, internally contracted multireference configuration interaction, including size-extensivity corrections in the aug-cc-pCV6Z basis set. Three more DMSs were produced and are made available, mainly for testing purposes: LTP2011P - as LTP2011 but based on Pople-corrected dipoles; LTP2011NR - as LTP2011 but does not include the relativistic corrections; and, LTP2011S - as LTP2011 but includes fewer fitting parameters.",
+          DOI: "10.1063/1.3604934",
+          references: {one: "11LoTePo", two: "J. Chem. Phys. 135, 034113 (2011)"},
+          year: "2011",
+          email: "j.tennyson@ucl.ac.uk",
+          supplementaryDescription: "A Fortran 95 routine containing the LTP2011, LTP2011S, LTP2011NR, and LTP20112011P DMSs and the ab initio data on which they are based.",
+          supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-135-042125",
+          predictedEnergyLevels: "No"
+        },
+        {
+          paperTitle: "Convergence testing of the analytic representation of an ab initio dipole moment function for water: Improved fitting yields improved intensities",
+          surfaceDescription: "Calculations made using an analytic representation of an ab initio DMS.",
+          DOI: "10.1063/1.1311392",
+          references: {one: "00ScPaxx", two: "J. Chem. Phys. 113, 6592 (2000)"},
+          year: "2000",
+          email: "schwenke@pegasus.arc.nasa.gov",
+          supplementaryDescription: "A Fortran subroutine to evaluate the DMS, and four tables of intensity ratios (theory/experiment) for various methods and data.",
+          supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-113-304040",
+          predictedEnergyLevels: "NA"
+        }]
+    }
+  },
     {
         molecule: [
             {value: "H", sub: 3},
@@ -469,7 +470,8 @@ const molecules = [
                 supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285211000932 (Under 'Appendix A. Supplementary material')",
                 predictedEnergyLevels: "NA"
             }
-        ],
+
+        ]},
         dipoleMomentSurface: {}
     },
     {
