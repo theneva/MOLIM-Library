@@ -16,10 +16,10 @@ export default class SurfaceButtonDisplay extends React.Component {
       <div style={styles.surfaceButtonContainer}>
         {this.props.data.potentialEnergySurface.exists ?
           <SurfaceButton type="Potential Energy Surface(s)" data={this.props.data} changeDisplay={this.props.changeDisplay}/> :
-          <SurfaceButton type="No Potential Energy Surface(s)"/>}
+          <SurfaceButton type="No Potential Energy Surface(s) Available"/>}
         {this.props.data.dipoleMomentSurface.exists ?
           <SurfaceButton type="Dipole Moment Surface(s)" data={this.props.data} changeDisplay={this.props.changeDisplay}/> :
-          <SurfaceButton type="No Dipole Moment Surface(s)"/>}
+          <SurfaceButton type="No Dipole Moment Surface(s) Available"/>}
       </div>
     </div>
   }
