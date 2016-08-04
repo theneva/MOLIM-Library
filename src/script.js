@@ -147,7 +147,7 @@ const molecules = [
         },
         dipoleMomentSurface: {
             exists: true,
-            one: {
+            array: [{
                 paperTitle: "The determination of an accurate isotope dependent potential energy surface for water from extensive ab initio calculations and experimental data",
                 surfaceDescription: "Ab initio isotope dependent DMS, computed at 771 points using the 5Z basis set. For the points below 40000 cm-1, the core contribution was also determined using the CQZ basis.",
                 DOI: "10.1063/1.473987",
@@ -158,7 +158,7 @@ const molecules = [
                 supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA-106-4618",
                 predictedEnergyLevels: "NA"
             },
-            two: {
+            {
                 paperTitle: "A new ab initio ground-state dipole moment surface for the water molecule",
                 surfaceDescription: "Valence only DMS computed at the internally contracted multireference configuration interaction level using the aug-cc-pV6Z basis set.",
                 DOI: "10.1063/1.2817606",
@@ -169,7 +169,7 @@ const molecules = [
                 supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-127-307747",
                 predictedEnergyLevels: "No"
             },
-            three: {
+            {
                 paperTitle: "A global, high accuracy ab initio dipole moment surface for the electronic ground state of the water molecule",
                 surfaceDescription: "A highly accurate, global DMS, 'LTP2011', is calculated using ab initio methods. It is based on all-electron, internally contracted multireference configuration interaction, including size-extensivity corrections in the aug-cc-pCV6Z basis set. Three more DMSs were produced and are made available, mainly for testing purposes: LTP2011P - as LTP2011 but based on Pople-corrected dipoles; LTP2011NR - as LTP2011 but does not include the relativistic corrections; and, LTP2011S - as LTP2011 but includes fewer fitting parameters.",
                 DOI: "10.1063/1.3604934",
@@ -180,7 +180,7 @@ const molecules = [
                 supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-135-042125",
                 predictedEnergyLevels: "No"
             },
-            four: {
+            {
                 paperTitle: "Convergence testing of the analytic representation of an ab initio dipole moment function for water: Improved fitting yields improved intensities",
                 surfaceDescription: "Calculations made using an analytic representation of an ab initio DMS.",
                 DOI: "10.1063/1.1311392",
@@ -191,7 +191,7 @@ const molecules = [
                 supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-113-304040",
                 predictedEnergyLevels: "NA"
             },
-        },
+        ],
     },
     {
         molecule: [
@@ -447,7 +447,7 @@ const molecules = [
 
         potentialEnergySurface: {
             exists: true,
-            one: {
+            array: [{
                 paperTitle: "Potential-energy surface for the electronic ground state of NH3 up to 20000cm−1 above equilibrium",
                 surfaceDescription: "6D ab initio PES for electronic ground state of NH3, generated using CCSD(T) and aug-cc-pVTZ basis. A spectroscopic PES is determined by a slight empirical adjustment of the ab initio potential to the experimental vibrational term values.",
                 DOI: "10.1063/1.2047572",
@@ -458,7 +458,7 @@ const molecules = [
                 supplementaryLink: "ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-123-004536",
                 predictedEnergyLevels: "NA"
             },
-            two: {
+            {
                 paperTitle: "Towards efficient refinement of molecular potential energy surfaces: Ammonia as a case study",
                 surfaceDescription: "Spectroscopic PES, 'NH3-Y2010', for which the refinement is represented as a perturbation to the initial PES, which is diagonalised in a basis of eigenfunctions of the unperturbed Hamiltonian. NH3-Y2010 is constructed using literature values for observed spectroscopic data for J≤8 and covering the energy range below 10300 cm-1.  ",
                 DOI: "10.1016/j.jms.2011.04.005",
@@ -469,7 +469,7 @@ const molecules = [
                 supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285211000932 (Under 'Appendix A. Supplementary material')",
                 predictedEnergyLevels: "NA"
             }
-        },
+        ],
         dipoleMomentSurface: {}
     },
     {
