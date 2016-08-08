@@ -293,7 +293,7 @@ const molecules = [
                 year: "2015",
                 email: "NA",
                 supplementaryDescription: "A Fortran program which implements the recommended DMS, 'ALYT2'; a spreadsheet comparing line intensities predicted by the different DMSs tested; and, a full list of lines in HITRAN which are identified as problematic.",
-                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022407315001314 (Under 'Appendix A. Supplementary data')",
+                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022407315001314",
                 predictedEnergyLevels: "NA"
             }
             ]
@@ -472,7 +472,7 @@ const molecules = [
                 year: "2009",
                 email: "NA",
                 supplementaryDescription: "The ab initio energy values and the parameter values obtained from the fits of the potential energy function, together with Fortran routines for evaluating the corresponding potential energy values at arbitrary geometries; term values; and, transition moments.",
-                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285209001507 (Under 'Appendix A. Supplementary data')",
+                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285209001507",
                 predictedEnergyLevels: "NA"
             }
             ]
@@ -487,7 +487,7 @@ const molecules = [
                 year: "2009",
                 email: "NA",
                 supplementaryDescription: "The optimized parameters and a Fortran routine for calculating the dipole moment values; term values; and, transition moments.",
-                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285209001507 (Under 'Appendix A. Supplementary data')",
+                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285209001507",
                 predictedEnergyLevels: "NA"
             }
             ]
@@ -521,7 +521,7 @@ const molecules = [
                     year: "2011",
                     email: "j.tennyson@ucl.ac.uk or s.yurchenko@ucl.ac.uk or r.barber@ucl.ac.uk or thiel@mpi-muelheim.mpg.de or jensen@uni-wuppertal.de",
                     supplementaryDescription: "Fortran 90 routine for calculating PE values in combination with an input file containing the potential parameters; and, a set of experimental energies selected for the refinements, along with the corresponding calculated term values and the Obs.-Calc. deviations.",
-                    supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285211000932 (Under 'Appendix A. Supplementary material')",
+                    supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285211000932",
                     predictedEnergyLevels: "NA"
                 }
 
@@ -574,7 +574,7 @@ const molecules = [
                 year: "2010",
                 email: "s.yurchenko@ucl.ac.uk",
                 supplementaryDescription: "A Fortran 90 routine for calculating the DMS; vibrational transition moments; vibrational intensities; and, a line list for 121SbH3.",
-                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022407310000944 (Under 'Appendix A. Supplementary data')",
+                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022407310000944",
                 predictedEnergyLevels: "NA"
             }
             ]
@@ -660,7 +660,7 @@ const molecules = [
                 year: "2013",
                 email: "s.yurchenko@ucl.ac.uk",
                 supplementaryDescription: "A Fortran 90 program to compute the Cartesian dipole moment components and potential energy values of CH4 for an arbitrary geometry from the dipole moment and potential parameters; ab initio and dipole moment parameters; refined potential and ab initio dipole moment parameters in a compact representation; and, a list of vibrational transition moments, individual vibrational matrix elements of the Cartesian components of the dipole moment, and band intensities of 12CH4 at T=298.15K",
-                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285213000866 (Under 'Appendix A. Supplementary material')",
+                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285213000866",
                 predictedEnergyLevels: "NA"
             }
             ]
@@ -675,7 +675,7 @@ const molecules = [
                 year: "2013",
                 email: "s.yurchenko@ucl.ac.uk",
                 supplementaryDescription: "A Fortran 90 program to compute the Cartesian dipole moment components and potential energy values of CH4 for an arbitrary geometry from the dipole moment and potential parameters; ab initio and dipole moment parameters; refined potential and ab initio dipole moment parameters in a compact representation; a list of vibrational transition moments, individual vibrational matrix elements of the Cartesian components of the dipole moment, and band intensities of 12CH4 at T=298.15K.",
-                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285213000866 (Under 'Appendix A. Supplementary material')",
+                supplementaryLink: "http://www.sciencedirect.com/science/article/pii/S0022285213000866",
                 predictedEnergyLevels: "NA"
             }
             ]

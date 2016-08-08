@@ -10,7 +10,7 @@ export default class MoleculeSurfaceDescription extends React.Component {
       <h5>Supplementary Material Description:</h5><p>{this.props.data.supplementaryDescription}</p>
       <h5>Supplementary Material Link:</h5><a href={this.props.data.supplementaryLink}>{this.props.data.supplementaryLink}</a>
       <h5>Predicted Energy Level as Part of Paper:</h5><p>{this.props.data.predictedEnergyLevels}</p>
-      <h5>DOI:</h5><p>{this.props.data.DOI}</p>
+      <h5>DOI:</h5><a>http://dx.doi.org/{this.props.data.DOI}</a>
       <h5>Reference I:</h5><p>{this.props.data.references.one}</p>
       <h5>Reference II:</h5><p>{this.props.data.references.two}</p>
       <h5>Contact email(s):</h5><p>{this.props.data.email}</p>
