@@ -225,7 +225,7 @@ const molecules = [
                 year: "1996",
                 email: "boothroy@zeus.maths.monash.edu.au or pgmartin@cita.utoronto.ca",
                 supplementaryDescription: "Fortran routines for the BKMP2 H3 surface; a Fortran test program to check that the surface is being evaluated correctly on your computer, and a text file containing the correct output from the test program; all the energies used to fit the BKMP2 H3 surface (it contains 5 files of ground-state ab initio energies, and 2 files of non-ab-initio energies that were generated to constrain the surface at short and long range); and, all the ab initio H3 energies computed by the authors (it contains 5 files of ab initio energies, including some excited state energies).",
-                supplementaryLink: "http://www.cita.utoronto.ca/~pgmartin/h3pes/index.html, with extra material available from: ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA-95-4331-170",
+                supplementaryLink: "http://www.cita.utoronto.ca/~pgmartin/h3pes/index.html",
                 predictedEnergyLevels: "No, only ab initio energies"
             }
             ]
@@ -449,7 +449,7 @@ const molecules = [
                 year: "2002",
                 email: "NA",
                 supplementaryDescription: "Fortran routines for the BMKP H4 surface; a Fortran test program to check that the surface is being evaluated correctly on your computer; all the energies used to fit the BMKP H4 surface (it contains 5 files of ground-state ab initio energies, and 5 files of non-ab-initio energies that were generated to constrain the surface at short and long range); and, all the ab initio H4 energies computed by the authors (it contains 7 files of ab initio energies, including excited state energies).",
-                supplementaryLink: "http://www.cita.utoronto.ca/~pgmartin/h4pes/index.html. Also available from here, with extra material: ftp://ftp.aip.org/epaps/journ_chem_phys/E-JCPSA6-115-304140",
+                supplementaryLink: "http://www.cita.utoronto.ca/~pgmartin/h4pes/index.html",
                 predictedEnergyLevels: "NA"
             }
             ]
