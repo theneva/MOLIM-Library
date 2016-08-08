@@ -6,10 +6,7 @@ const styles = {
   partContainer: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '100%',
-    height: '82vh',
+    alignItems: 'center'
   },
   parts: {
     display: 'flex',
@@ -24,7 +21,7 @@ const styles = {
   },
   title: {
     display: 'flex',
-    alignSelf: 'flex-start',
+    alignSelf: 'flex-start'
   }
 }
 
