@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Router, Route, IndexRoute, Link, browserHistory, hashHistory} from 'react-router';
 
-import App from './components/App.jsx'
+import App from './components/App.jsx';
+import Home from './components/Home.jsx';
+import MoleculeInformation from './components/MoleculeInformation.jsx';
+import MoleculeDisplay from './components/MoleculeDisplay.jsx';
+import MoleculeSurfaceDescription from './components/MoleculeSurfaceDescription.jsx';
 
 const molecules = [
     {
@@ -9,6 +14,7 @@ const molecules = [
             {value: "Na", sub: 1},
             {value: "H", sub: 1}
         ],
+        name: "NaH",
         numberOfAtoms: "2",
 
         potentialEnergySurface: {
@@ -34,6 +40,7 @@ const molecules = [
             {value: "S", sub: 1},
             {value: "O", sub: 2}
         ],
+        name: "SO2",
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
@@ -72,6 +79,7 @@ const molecules = [
             {value: "C", sub: 1},
             {value: "O", sub: 2}
         ],
+        name: "CO2",
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
@@ -110,6 +118,7 @@ const molecules = [
             {value: "H", sub: 2},
             {value: "O", sub: 1},
         ],
+        name: "Molecule4",
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
@@ -213,6 +222,7 @@ const molecules = [
         molecule: [
             {value: "H", sub: 3},
         ],
+        name: "Molecule5",
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
@@ -239,6 +249,7 @@ const molecules = [
             {value: "O", sub: 1},
 
         ],
+        name: "Molecule6",
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
@@ -263,6 +274,7 @@ const molecules = [
             {value: "H", sub: 2},
             {value: "S", sub: 1},
         ],
+        name: "Molecule7",
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
@@ -304,6 +316,7 @@ const molecules = [
             {value: "H-CO (X", sup: 2},
             {value: "A')", sub: "1"},
         ],
+        name: "Molecule8",
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
@@ -328,6 +341,7 @@ const molecules = [
             {value: "He-", sub: "1"},
             {value: "O", sub: "2"},
         ],
+        name: "Molecule100",
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
@@ -352,6 +366,7 @@ const molecules = [
             {value: "H", sub: "3"},
             {value: "", sup: "+"}
         ],
+        name: "Molecule9",
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
@@ -376,6 +391,7 @@ const molecules = [
             {value: "H", sub: "2"},
             {value: "CO", sub: "1"},
         ],
+        name: "Molecule10",
         numberOfAtoms: "4",
 
         potentialEnergySurface: {
@@ -400,6 +416,7 @@ const molecules = [
             {value: "H", sub: "2"},
             {value: "CS", sub: "1"},
         ],
+        name: "Molecule11",
         numberOfAtoms: "4",
 
         potentialEnergySurface: {
@@ -437,6 +454,7 @@ const molecules = [
         molecule: [
             {value: "H", sub: "4"},
         ],
+        name: "Molecule12",
         numberOfAtoms: "4",
 
         potentialEnergySurface: {
@@ -460,6 +478,7 @@ const molecules = [
         molecule: [
             {value: "HSOH", sub: "1"},
         ],
+        name: "Molecule13",
         numberOfAtoms: "4",
 
         potentialEnergySurface: {
@@ -498,6 +517,7 @@ const molecules = [
             {value: "N", sub: "1"},
             {value: "H", sub: "3"},
         ],
+        name: "Molecule14",
         numberOfAtoms: "4",
 
         potentialEnergySurface: {
@@ -534,6 +554,7 @@ const molecules = [
             {value: "C", sub: "1"},
             {value: "H", sub: "3"},
         ],
+        name: "Molecule15",
         numberOfAtoms: "4",
 
         potentialEnergySurface: {
@@ -558,6 +579,7 @@ const molecules = [
             {value: "Sb", sub: "1"},
             {value: "H", sub: "3"},
         ],
+        name: "Molecule16",
         numberOfAtoms: "4",
 
         potentialEnergySurface: {},
@@ -585,6 +607,7 @@ const molecules = [
             {value: "S", sub: "1"},
             {value: "O", sub: "3"},
         ],
+        name: "Molecule17",
         numberOfAtoms: "4",
 
         potentialEnergySurface: {
@@ -624,6 +647,7 @@ const molecules = [
             {value: "O-", sub: "1"},
             {value: "He", sub: "1"}
         ],
+        name: "Molecule18",
         numberOfAtoms: "4",
 
         potentialEnergySurface: {
@@ -648,6 +672,7 @@ const molecules = [
             {value: "C", sub: "1"},
             {value: "H", sub: "4"},
         ],
+        name: "Molecule19",
         numberOfAtoms: "5",
 
         potentialEnergySurface: {
@@ -686,6 +711,7 @@ const molecules = [
             {value: "Si", sub: "1"},
             {value: "H", sub: "4"},
         ],
+        name: "Molecule20",
         numberOfAtoms: "5",
 
         potentialEnergySurface: {
@@ -725,6 +751,7 @@ const molecules = [
             {value: "H", sub: "3"},
             {value: "Cl", sub: "1"},
         ],
+        name: "Molecule21",
         numberOfAtoms: "5",
 
         potentialEnergySurface: {
@@ -751,6 +778,7 @@ const molecules = [
             {value: "C", sub: "1"},
             {value: "O", sub: "2"},
         ],
+        name: "Molecule22",
         numberOfAtoms: "6",
 
         potentialEnergySurface: {
@@ -780,6 +808,7 @@ const molecules = [
             {value: "C", sub: "1"},
 
         ],
+        name: "Molecule23",
         numberOfAtoms: "6",
 
         potentialEnergySurface: {
@@ -828,9 +857,65 @@ const molecules = [
  supplementaryDescription: "",
  supplementaryLink: "",
  predictedEnergyLevels: "" **/
+class HomeWrapper extends React.Component {
+    render() {
+        console.log("Home loaded")
+        return <Home molecules={molecules}/>
+    }
+}
 
+class MoleculeInformationWrapper extends React.Component {
+    render() {
+        console.log("Information loaded")
+        return <MoleculeInformation molecules={molecules} path={this.props.params.moleculeName}/>
+    }
+}
+
+class PotentialMoleculeDisplayWrapper extends React.Component {
+    findMoleculeByName(name) {
+        return molecules.filter((molecule) => molecule.name == name)
+    }
+
+    render() {
+        const molecule = this.findMoleculeByName(this.props.params.moleculeName)[0];
+        return <MoleculeDisplay type="Potential" urlName={this.props.params.moleculeName} data={molecule.potentialEnergySurface}/>
+    }
+}
+
+class DipoleMoleculeDisplayWrapper extends React.Component {
+    findMoleculeByName(name) {
+        return molecules.filter((molecule) => molecule.name == name)
+    }
+
+    render() {
+        const molecule = this.findMoleculeByName(this.props.params.moleculeName)[0];
+        return <MoleculeDisplay type="Dipole" urlName={this.props.params.moleculeName} data={molecule.dipoleMomentSurface}/>
+    }
+}
+
+class MoleculeSurfaceDescriptionWrapper extends React.Component {
+    findMoleculeByName(name) {
+        return molecules.filter((molecule) => molecule.name == name)
+    }
+
+    render(){
+        const molecule = this.findMoleculeByName(this.props.params.moleculeName);
+        return this.props.route.path.includes("Potential") ? <MoleculeSurfaceDescription data={molecule[0].potentialEnergySurface.array[this.props.params.index]}/> :
+         <MoleculeSurfaceDescription data={molecule[0].dipoleMomentSurface.array[this.props.params.index]}/>
+    }
+}
 
 ReactDOM.render(
-    <App molecules={molecules}/>,
+    <Router history={hashHistory}>
+        <Route path="/" component={App}>
+            <IndexRoute component={HomeWrapper}/>
+            <Route path="molecule/:moleculeName" component={MoleculeInformationWrapper}/>
+            <Route path ="molecule/:moleculeName/Potential" component={PotentialMoleculeDisplayWrapper}/>
+            <Route path ="molecule/:moleculeName/Dipole" component={DipoleMoleculeDisplayWrapper}/>
+            <Route path ="molecule/:moleculeName/Dipole" component={DipoleMoleculeDisplayWrapper}/>
+            <Route path ="molecule/:moleculeName/Potential/index/:index" component={MoleculeSurfaceDescriptionWrapper}/>
+            <Route path ="molecule/:moleculeName/Dipole/index/:index" component={MoleculeSurfaceDescriptionWrapper}/>
+        </Route>
+    </Router>,
     document.getElementById('react-container')
 )
