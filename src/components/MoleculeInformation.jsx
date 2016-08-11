@@ -4,40 +4,47 @@ import MoleculeDisplay from './MoleculeDisplay.jsx';
 import Molecule from './Molecule.jsx';
 
 const styles = {
-  container: {
-    padding: '1vh 3vw 1vh 3vw'
-  },
-  surfaceContainer: {
-    display: 'flex',
-    flexDirection: 'column'
-  },
+    container: {
+        padding: '1vh 3vw 1vh 3vw'
+    },
+    surfaceContainer: {
+        display: 'flex',
+        flexDirection: 'column'
+    },
 }
 
 export default class MoleculeInformation extends React.Component {
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-    this.state = {
-      surfaces: true,
-      surfaceType: undefined
+        this.state = {
+            surfaces: true,
+            surfaceType: undefined
+        }
     }
-  }
 
-  changeDisplay(surfaceType) {
-    console.log(surfaceType)
-    this.setState({
-      surfaces: false,
-      surfaceType: surfaceType
-    })
-  }
+    findMoleculeByName(name) {
+        return this.props.molecules.filter((molecule) => molecule.name == name)
+    }
 
-  render() {
-    return <div style={styles.container}>
-      <h1><Molecule constituents={this.props.molecule.molecule}/></h1> {/* lol */}
-      {this.state.surfaces ?
-        <SurfaceButtonDisplay data={this.props.molecule} changeDisplay={this.changeDisplay.bind(this)}/> :
-        this.state.surfaceType == "Potential Energy Surface(s)" ? <MoleculeDisplay name={this.props.molecule.molecule} data={this.props.molecule.potentialEnergySurface}/> :
-          <MoleculeDisplay name={this.props.molecule.molecule} data={this.props.molecule.dipoleMomentSurface}/> }
-    </div>
-  }
+    componentWillMount() {
+        this.setState({
+            molecule: this.findMoleculeByName(this.props.path)[0]
+        })
+    }
+
+    changeDisplay(surfaceType) {
+        console.log(surfaceType);
+        this.setState({
+            surfaces: false,
+            surfaceType: surfaceType
+        })
+    }
+
+    render() {
+        return <div style={styles.container}>
+            <h1><Molecule constituents={this.state.molecule.molecule}/></h1> {/* lol */}
+            <SurfaceButtonDisplay data={this.state.molecule} changeDisplay={this.changeDisplay.bind(this)}/>
+        </div>
+    }
 }

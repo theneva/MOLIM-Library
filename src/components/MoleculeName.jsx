@@ -1,5 +1,6 @@
-import React from 'react'
-import Molecule from './Molecule.jsx'
+import React from 'react';
+import { Link } from 'react-router';
+import Molecule from './Molecule.jsx';
 
 const styles = {
   button: {
@@ -15,8 +16,8 @@ const styles = {
 
 export default class MoleculeName extends React.Component {
   render(){
-    return <a href="#" className="img-rounded" style={styles.button} onClick={this.props.changePageState}>
+    return <Link to={`/molecule/${this.props.urlName}`} className="img-rounded" style={styles.button}>
       <Molecule constituents={this.props.name}/>
-    </a>
+    </Link>
   }
 }
