@@ -1,6 +1,7 @@
 import React from 'react';
 import MoleculeSurfaceDescription from './MoleculeSurfaceDescription.jsx';
 import Molecule from './Molecule.jsx';
+import { Link } from 'react-router';
 
 const styles = {
   partContainer: {
@@ -42,19 +43,16 @@ export default class MoleculeDisplay extends React.Component {
 
   render() {
     return <div style={styles.container}>
-      {this.props.data.array != undefined ?
-        this.state.arrayNumber == undefined ?
+      <h1><Molecule constituents={this.props.name}/></h1> {/* lol */}
           <div style={styles.partContainer}>
             {this.props.data.array.map((element, index)=> {
-              return <a className="img-rounded" href="#" style={styles.parts}
+              return <Link to={`/molecule/${this.props.urlName}/${this.props.type}/index/${index}`} className="img-rounded" href="" style={styles.parts}
                 onClick={() => this.changeArrayNumber(index)}>
                 <h3>{element.paperTitle}</h3>
                 <p>{element.surfaceDescription}</p>
-              </a>
+              </Link>
             })}
-          </div> :
-          <MoleculeSurfaceDescription name={this.props.name} data={this.props.data.array[this.state.arrayNumber]}/> :
-        <MoleculeSurfaceDescription name={this.props.name} data={this.props.data}/>}
+          </div>
     </div>
   }
 }
