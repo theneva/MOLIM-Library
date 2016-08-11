@@ -5,9 +5,7 @@ import { Link } from 'react-router';
 
 const styles = {
   container: {
-    marginLeft: '3vw',
-    marginRight: '3vw',
-    marginTop: '4vh'
+    padding: '1vh 3vw 1vh 3vw'
   },
   partContainer: {
     display: 'flex',

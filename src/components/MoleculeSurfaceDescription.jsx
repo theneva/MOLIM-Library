@@ -3,9 +3,7 @@ import Molecule from './Molecule.jsx';
 
 const styles = {
     container: {
-        marginLeft: '3vw',
-        marginRight: '3vw',
-        marginTop: '4vh'
+      padding: '1vh 3vw 1vh 3vw'
     },
     sectionContainer: {
         background: 'rgb(242, 242, 242)',
