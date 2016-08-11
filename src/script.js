@@ -878,7 +878,7 @@ class PotentialMoleculeDisplayWrapper extends React.Component {
 
     render() {
         const molecule = this.findMoleculeByName(this.props.params.moleculeName)[0];
-        return <MoleculeDisplay type="Potential" urlName={this.props.params.moleculeName} data={molecule.potentialEnergySurface}/>
+        return <MoleculeDisplay type="Potential" name={molecule.molecule} urlName={this.props.params.moleculeName} data={molecule.potentialEnergySurface}/>
     }
 }
 
@@ -889,7 +889,7 @@ class DipoleMoleculeDisplayWrapper extends React.Component {
 
     render() {
         const molecule = this.findMoleculeByName(this.props.params.moleculeName)[0];
-        return <MoleculeDisplay type="Dipole" urlName={this.props.params.moleculeName} data={molecule.dipoleMomentSurface}/>
+        return <MoleculeDisplay type="Dipole" name={molecule.molecule} urlName={this.props.params.moleculeName} data={molecule.dipoleMomentSurface}/>
     }
 }
 
@@ -900,8 +900,8 @@ class MoleculeSurfaceDescriptionWrapper extends React.Component {
 
     render(){
         const molecule = this.findMoleculeByName(this.props.params.moleculeName);
-        return this.props.route.path.includes("Potential") ? <MoleculeSurfaceDescription data={molecule[0].potentialEnergySurface.array[this.props.params.index]}/> :
-         <MoleculeSurfaceDescription data={molecule[0].dipoleMomentSurface.array[this.props.params.index]}/>
+        return this.props.route.path.includes("Potential") ? <MoleculeSurfaceDescription name = {molecule[0].molecule} data={molecule[0].potentialEnergySurface.array[this.props.params.index]}/> :
+         <MoleculeSurfaceDescription name = {molecule[0].molecule} data={molecule[0].dipoleMomentSurface.array[this.props.params.index]}/>
     }
 }
 

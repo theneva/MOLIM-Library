@@ -43,6 +43,7 @@ export default class MoleculeDisplay extends React.Component {
 
   render() {
     return <div style={styles.container}>
+      <h1><Molecule constituents={this.props.name}/></h1> {/* lol */}
           <div style={styles.partContainer}>
             {this.props.data.array.map((element, index)=> {
               return <Link to={`/molecule/${this.props.urlName}/${this.props.type}/index/${index}`} className="img-rounded" href="" style={styles.parts}
