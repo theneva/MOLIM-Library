@@ -4,6 +4,11 @@ import Molecule from './Molecule.jsx';
 import { Link } from 'react-router';
 
 const styles = {
+  container: {
+    marginLeft: '3vw',
+    marginRight: '3vw',
+    marginTop: '4vh'
+  },
   partContainer: {
     display: 'flex',
     flexDirection: 'column',

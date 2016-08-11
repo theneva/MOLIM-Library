@@ -2,6 +2,11 @@ import React from 'react';
 import Molecule from './Molecule.jsx';
 
 const styles = {
+    container: {
+        marginLeft: '3vw',
+        marginRight: '3vw',
+        marginTop: '4vh'
+    },
     sectionContainer: {
         background: 'rgb(242, 242, 242)',
         padding: '1vh 1vw 1vh 1vw'
@@ -11,7 +16,7 @@ const styles = {
 export default class MoleculeSurfaceDescription extends React.Component {
 
 render() {
-    return <div>
+    return <div style={styles.container}>
     <h1><Molecule constituents={this.props.name}/></h1>
     <div className="col-md-7">
     <h3>Paper Information</h3>
