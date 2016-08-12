@@ -769,7 +769,21 @@ const molecules = [
             }
             ]
         },
-        dipoleMomentSurface: {}
+        dipoleMomentSurface: {
+            exists: true,
+            array: [{
+                paperTitle: "A global ab initio dipole moment surface for methyl chloride",
+                surfaceDescription: "A DMS for methyl chloride has been generated at the CCSD(T)/aug-cc-pVQZ(+d for Cl) level of theory. To represent the DMS, a symmetry-adapted analytic representation in terms of nine vibrational coordinates has been developed and implemented.",
+                DOI: "10.1016/j.jqsrt.2016.06.037",
+                references: {one: "16OwYuYa", two: "Journal of Quantitative Spectroscopy & Radiative Transfer 184 (2016) 100–110"},
+                year: "2016",
+                email: "alec.owens.13@ucl.ac.uk",
+                supplementaryDescription: "Source Fortran code to construct DMS for methyl chloride (program will print Cartesian dipole moment components (D) for an arbitrary geometry using the DMS parameters); input file containing the DMS expansion parameters to use with the Fortran program; and, a spreadsheet containing vibrational transition moments (in Debye) from the vibrational ground state for both isotopologues of methyl chloride (also includes computed energies (in cm-1) and assignments from J. Chem. Phys. 142, 244306 (2015)).",
+                supplementaryLink: "http://www.sciencedirect.com.libproxy.ucl.ac.uk/science/article/pii/S0022407316302655",
+                predictedEnergyLevels: "NA"
+            }
+            ]
+        }
     },
     {
         molecule: [
@@ -878,7 +892,8 @@ class PotentialMoleculeDisplayWrapper extends React.Component {
 
     render() {
         const molecule = this.findMoleculeByName(this.props.params.moleculeName)[0];
-        return <MoleculeDisplay type="Potential" name={molecule.molecule} urlName={this.props.params.moleculeName} data={molecule.potentialEnergySurface}/>
+        return <MoleculeDisplay type="Potential" name={molecule.molecule} urlName={this.props.params.moleculeName}
+                                data={molecule.potentialEnergySurface}/>
     }
 }
 
@@ -889,7 +904,8 @@ class DipoleMoleculeDisplayWrapper extends React.Component {
 
     render() {
         const molecule = this.findMoleculeByName(this.props.params.moleculeName)[0];
-        return <MoleculeDisplay type="Dipole" name={molecule.molecule} urlName={this.props.params.moleculeName} data={molecule.dipoleMomentSurface}/>
+        return <MoleculeDisplay type="Dipole" name={molecule.molecule} urlName={this.props.params.moleculeName}
+                                data={molecule.dipoleMomentSurface}/>
     }
 }
 
@@ -898,10 +914,12 @@ class MoleculeSurfaceDescriptionWrapper extends React.Component {
         return molecules.filter((molecule) => molecule.name == name)
     }
 
-    render(){
+    render() {
         const molecule = this.findMoleculeByName(this.props.params.moleculeName);
-        return this.props.route.path.includes("Potential") ? <MoleculeSurfaceDescription name = {molecule[0].molecule} data={molecule[0].potentialEnergySurface.array[this.props.params.index]}/> :
-         <MoleculeSurfaceDescription name = {molecule[0].molecule} data={molecule[0].dipoleMomentSurface.array[this.props.params.index]}/>
+        return this.props.route.path.includes("Potential") ? <MoleculeSurfaceDescription name={molecule[0].molecule}
+                                                                                         data={molecule[0].potentialEnergySurface.array[this.props.params.index]}/> :
+            <MoleculeSurfaceDescription name={molecule[0].molecule}
+                                        data={molecule[0].dipoleMomentSurface.array[this.props.params.index]}/>
     }
 }
 
@@ -910,11 +928,11 @@ ReactDOM.render(
         <Route path="/" component={App}>
             <IndexRoute component={HomeWrapper}/>
             <Route path="molecule/:moleculeName" component={MoleculeInformationWrapper}/>
-            <Route path ="molecule/:moleculeName/Potential" component={PotentialMoleculeDisplayWrapper}/>
-            <Route path ="molecule/:moleculeName/Dipole" component={DipoleMoleculeDisplayWrapper}/>
-            <Route path ="molecule/:moleculeName/Dipole" component={DipoleMoleculeDisplayWrapper}/>
-            <Route path ="molecule/:moleculeName/Potential/index/:index" component={MoleculeSurfaceDescriptionWrapper}/>
-            <Route path ="molecule/:moleculeName/Dipole/index/:index" component={MoleculeSurfaceDescriptionWrapper}/>
+            <Route path="molecule/:moleculeName/Potential" component={PotentialMoleculeDisplayWrapper}/>
+            <Route path="molecule/:moleculeName/Dipole" component={DipoleMoleculeDisplayWrapper}/>
+            <Route path="molecule/:moleculeName/Dipole" component={DipoleMoleculeDisplayWrapper}/>
+            <Route path="molecule/:moleculeName/Potential/index/:index" component={MoleculeSurfaceDescriptionWrapper}/>
+            <Route path="molecule/:moleculeName/Dipole/index/:index" component={MoleculeSurfaceDescriptionWrapper}/>
         </Route>
     </Router>,
     document.getElementById('react-container')
