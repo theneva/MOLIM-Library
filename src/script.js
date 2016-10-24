@@ -855,7 +855,7 @@ const molecules = [
             }
             ]
         }
-    }
+    },
 ];
 
 /** molecule: "",
