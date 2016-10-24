@@ -14,7 +14,7 @@ const molecules = [
             {value: "Na", sub: 1},
             {value: "H", sub: 1}
         ],
-        name: "NaH",
+        name: "Molecule1",
         numberOfAtoms: "2",
 
         potentialEnergySurface: {
@@ -40,7 +40,7 @@ const molecules = [
             {value: "S", sub: 1},
             {value: "O", sub: 2}
         ],
-        name: "SO2",
+        name: "Molecule2",
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
@@ -79,7 +79,7 @@ const molecules = [
             {value: "C", sub: 1},
             {value: "O", sub: 2}
         ],
-        name: "CO2",
+        name: "Molecule3",
         numberOfAtoms: "3",
 
         potentialEnergySurface: {
