@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, IndexRoute, Link, browserHistory, hashHistory} from 'react-router';
+import {Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
 import App from './components/App.jsx';
 import Home from './components/Home.jsx';
@@ -924,7 +924,7 @@ class MoleculeSurfaceDescriptionWrapper extends React.Component {
 }
 
 ReactDOM.render(
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
         <Route path="/" component={App}>
             <IndexRoute component={HomeWrapper}/>
             <Route path="molecule/:moleculeName" component={MoleculeInformationWrapper}/>
