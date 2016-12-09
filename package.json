@@ -2,6 +2,7 @@
   "name": "application-name",
   "version": "0.0.1",
   "scripts": {
+    "postinstall": "npm run build",
     "start": "node server.js",
     "build": "webpack --config webpack.config.js",
     "webpack:watch": "webpack --watch",
